@@ -30,25 +30,15 @@ const Navbar = () => {
       {/* Sticky navbar*/}
       <div className="sticky-top">
         <div className="topnav" id="myTopnav">
-          <NavLink className="a" to="/">
+          <a href="#home" className="active">
             Home
-          </NavLink>
-          <NavLink className="a" to="/about/">
-            About
-          </NavLink>
-          <NavLink className="a" to="/projects/">
-            Projects
-          </NavLink>
-          <NavLink className="a" to="/contact/">
-            Contact
-          </NavLink>
-          <NavLink
-            className="icon a"
-            to="javascript:void(0)"
-            onClick={myFunction}
-          >
+          </a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" className="icon" onClick={myFunction}>
             <i className="fa fa-bars" />
-          </NavLink>
+          </a>
         </div>
       </div>
     </>
