@@ -4,14 +4,15 @@ import "../css/upnavbar.css";
 const UpNavbar = () => {
   return (
     <div>
-      <section className="py-5 text-center topimg">
+      <section className="py-3 text-center topimg">
         <div className="container py-5 text-white">
           <header className="py-5">
-            <h1 className="display-2">Hello</h1>
+            <h1 className="display-2 hello">Hello</h1>
             <h1 className="display-4">Wellcome to My Web Page</h1>
-            <p className="font-italic mb-1">
-              Create a sticky top navbar using Bootstrap 4 utility classes.
-            </p>
+            <h2 className="font-italic mb-1 mt-5 bolder">
+              On this page, you'll find everything you need to know about me and
+              my work.
+            </h2>
           </header>
         </div>
       </section>

@@ -1,10 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
 import BlogDetail from "./components/BlogDetail";
-import Footer from "./components/Footer";
 import Login from "./components/Login";
-import PrivateRouter from "./components/PrivateRouter";
+// import PrivateRouter from "./components/PrivateRouter";
 import Register from "./components/Register";
 import Blogs from "./pages/Blogs";
 import Home from "./pages/Home";
@@ -28,7 +26,6 @@ function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
     </>
   );
 }

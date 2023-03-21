@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import UpNavbar from "../components/UpNavbar";
 import "../css/home.css";
@@ -8,6 +9,40 @@ const Home = () => {
     <>
       <UpNavbar />
       <Navbar />
+      <section className="s1">
+        <h1 className="aboutme">About Me</h1>
+        <p className="aboutdesc">
+          Having 4+ years experienced in IT and 1+ an expert front-end
+          developer, interested in writing codes, skilled at developing complex
+          solutions, creating responsive designs, possessing strong creative
+          thinking skills, high energy and integrity. Ability to create
+          algorithms effectively, and interact positively and communicate
+          appropriately with team members. Quickly grasp new technologies and
+          concepts to develop innovative and creative solutions to problems.
+          Always eager to learn various technologies, tools and libraries.
+          Especially interested in the Frontend / Web Development, HTML, CSS,
+          JS, React. Excited to learn new things and improve, lifetime student.
+        </p>
+      </section>
+      <div className="bg img1">
+        <h1 className="titleWay1">You can download and read my cw</h1>
+      </div>
+      <section className="s2">
+        <h1 className="work">
+          {/* style={{letter-spacing: "0.4rem"; font-size: 2rem}} */}
+          How To Create a Parallax Scrolling Effect
+        </h1>
+        <p className="workdesc">
+          Use a container element and add a background image to the container
+          with a specific height. Then use the{" "}
+          <span className="bold2">background-attachment: fixed</span> to create
+          the actual parallax effect. The other background properties are used
+          to center and scale the image perfectly
+        </p>
+      </section>
+      <div className="bg img2">
+        <h1 className="titleWay1">You can download and read my cw</h1>
+      </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officiis
         labore qui vel itaque repellat cumque similique saepe, deleniti
@@ -130,6 +165,7 @@ const Home = () => {
         sequi voluptate, consectetur veritatis aut quod explicabo. Voluptates
         voluptate amet labore?
       </p>
+      <Footer />
     </>
   );
 };
