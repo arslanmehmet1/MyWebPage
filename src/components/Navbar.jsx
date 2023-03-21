@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* Sticky navbar*/}
       <div className="sticky-top">
         <div className="topnav" id="myTopnav">
-          <NavLink className="active a" to="/">
+          <NavLink className="a" to="/">
             Home
           </NavLink>
           <NavLink className="a" to="/about/">
