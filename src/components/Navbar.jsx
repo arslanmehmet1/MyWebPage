@@ -30,12 +30,10 @@ const Navbar = () => {
       {/* Sticky navbar*/}
       <div className="sticky-top">
         <div className="topnav" id="myTopnav">
-          <a href="#home" className="active">
-            Home
-          </a>
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about/">About</NavLink>
+          <NavLink to="/projects/">Projects</NavLink>
+          <NavLink to="/contact/">Contact</NavLink>
           <a href="javascript:void(0);" className="icon" onClick={myFunction}>
             <i className="fa fa-bars" />
           </a>
