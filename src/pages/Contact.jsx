@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const Projects = () => {
+const Contact = () => {
   return (
     <>
       <Navbar />
@@ -9,4 +9,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Contact;

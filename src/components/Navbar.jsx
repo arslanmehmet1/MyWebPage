@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
 import "../css/navbar.css";
 
 const Navbar = () => {
@@ -15,8 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Demo header*/}
-      <section className="py-5 text-center topimg">
+      {/* <section className="py-5 text-center topimg">
         <div className="container py-5 text-white">
           <header className="py-5">
             <h1 className="display-2">Hello</h1>
@@ -26,12 +24,13 @@ const Navbar = () => {
             </p>
           </header>
         </div>
-      </section>
-      {/* Sticky navbar*/}
+      </section> */}
+
       <div className="sticky-top">
         <div className="topnav" id="myTopnav">
+          {/* <NavLink to="/">My Web Page</NavLink> */}
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/about/">About</NavLink>
+          <NavLink to="/blogs/">Blogs</NavLink>
           <NavLink to="/projects/">Projects</NavLink>
           <NavLink to="/contact/">Contact</NavLink>
           <a href="javascript:void(0);" className="icon" onClick={myFunction}>
