@@ -3,35 +3,37 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import UpNavbar from "../components/UpNavbar";
 import "../css/home.css";
+import myimg from "../img/myimg.jpg";
 
 const Home = () => {
   return (
     <>
       <UpNavbar />
       <Navbar />
-      <section className="s1">
-        <h1 className="aboutme">About Me</h1>
-        <p className="aboutdesc">
-          Having 4+ years experienced in IT and 1+ an expert front-end
-          developer, interested in writing codes, skilled at developing complex
-          solutions, creating responsive designs, possessing strong creative
-          thinking skills, high energy and integrity. Ability to create
-          algorithms effectively, and interact positively and communicate
-          appropriately with team members. Quickly grasp new technologies and
-          concepts to develop innovative and creative solutions to problems.
-          Always eager to learn various technologies, tools and libraries.
-          Especially interested in the Frontend / Web Development, HTML, CSS,
-          JS, React. Excited to learn new things and improve, lifetime student.
-        </p>
+      <section className="s1 row">
+        <div className="left col-md-5">
+          <img className="myimg" src={myimg} alt="" />
+        </div>
+        <div className="right col-md-7">
+          <h3 className="aboutme">My name is</h3>
+          <h1 className="name">Mehmet Arslan</h1>
+          <p className="aboutdesc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus quasi deserunt veniam. Commodi amet repudiandae eius
+            error? Repudiandae, fugiat ut voluptas explicabo sint nulla
+            voluptates facere vel alias voluptatum corporis consectetur saepe
+            incidunt assumenda laudantium odio officia in temporibus nisi itaque
+            laborum natus quidem aspernatur veniam? Fugiat optio est ex
+            architecto neque, aut temporibus pariatur dolores sint ipsam facere
+            odit!
+          </p>
+        </div>
       </section>
       <div className="bg img1">
         <h1 className="titleWay1">You can download and read my cw</h1>
       </div>
       <section className="s2">
-        <h1 className="work">
-          {/* style={{letter-spacing: "0.4rem"; font-size: 2rem}} */}
-          How To Create a Parallax Scrolling Effect
-        </h1>
+        <h1 className="work">How To Create a Parallax Scrolling Effect</h1>
         <p className="workdesc">
           Use a container element and add a background image to the container
           with a specific height. Then use the{" "}
