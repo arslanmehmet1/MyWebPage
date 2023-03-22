@@ -10,25 +10,27 @@ const Home = () => {
     <>
       <UpNavbar />
       <Navbar />
-      <section className="s1 row">
-        <div className="left col-md-5">
-          <img className="myimg" src={myimg} alt="" />
+      <div className="overflow-hidden">
+        <div className="s1 row">
+          <div className="left col-md-5">
+            <img className="myimg" src={myimg} alt="" />
+          </div>
+          <div className="right col-md-7">
+            <h3 className="aboutme">My name is</h3>
+            <h1 className="name">Mehmet Arslan</h1>
+            <p className="aboutdesc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus quasi deserunt veniam. Commodi amet repudiandae eius
+              error? Repudiandae, fugiat ut voluptas explicabo sint nulla
+              voluptates facere vel alias voluptatum corporis consectetur saepe
+              incidunt assumenda laudantium odio officia in temporibus nisi
+              itaque laborum natus quidem aspernatur veniam? Fugiat optio est ex
+              architecto neque, aut temporibus pariatur dolores sint ipsam
+              facere odit!
+            </p>
+          </div>
         </div>
-        <div className="right col-md-7">
-          <h3 className="aboutme">My name is</h3>
-          <h1 className="name">Mehmet Arslan</h1>
-          <p className="aboutdesc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatibus quasi deserunt veniam. Commodi amet repudiandae eius
-            error? Repudiandae, fugiat ut voluptas explicabo sint nulla
-            voluptates facere vel alias voluptatum corporis consectetur saepe
-            incidunt assumenda laudantium odio officia in temporibus nisi itaque
-            laborum natus quidem aspernatur veniam? Fugiat optio est ex
-            architecto neque, aut temporibus pariatur dolores sint ipsam facere
-            odit!
-          </p>
-        </div>
-      </section>
+      </div>
       <div className="bg img1">
         <h1 className="titleWay1">You can download and read my cw</h1>
       </div>
