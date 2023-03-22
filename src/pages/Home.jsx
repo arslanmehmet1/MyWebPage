@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import UpNavbar from "../components/UpNavbar";
 import "../css/home.css";
 import myimg from "../img/myimg.jpg";
+import { AiOutlineDownload } from "react-icons/ai";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -93,7 +94,7 @@ const Home = () => {
         <div className="text-center">
           <h5 className="titleWay1 text-center">download and read my resume</h5>
           <button type="button" className="resume">
-            Resume.pdf
+            Resume.pdf <AiOutlineDownload />
           </button>
         </div>
       </div>
