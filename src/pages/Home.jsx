@@ -79,12 +79,15 @@ const Home = () => {
               Projects
             </h1>
             <div className="workdesc">
-              <ul className="css-ul text-start h4">
+              <ul className="text-start h4">
                 <li className="m-1 ms-5">Bootstrap</li>
                 <li className="m-1 ms-5">React-Bootstrap</li>
                 <li className="m-1 ms-5">Style-Component</li>
                 <li className="m-1 ms-5">Material-UI</li>
                 <li className="m-1 ms-5">Tailwind CSS</li>
+                <li className="m-1 ms-5">
+                  Sass (Syntactically Awesome Stylesheet)
+                </li>
               </ul>
             </div>
           </div>
@@ -104,8 +107,37 @@ const Home = () => {
             <img className="myimg" src={myimg} alt="" />
           </div>
           <div className="right col-md-6">
-            <h3 className="aboutme">My name is</h3>
-            <h1 className="name">Mehmet Arslan</h1>
+            <h3 className="aboutme">
+              I have a passion for learning about the things that enjoy in web
+              development. I created frontend page by using different methods
+              for styling. <br />
+              <br />
+            </h3>
+            <p className="aboutme">
+              Also you can visit
+              <span className="bold3" onClick={() => navigate("/projects/")}>
+                {" "}
+                my projects page.
+              </span>
+              <br />
+              <br />
+              <h1 className="name2">What I can offer/ expect at work</h1>
+              <ul className="text-start h4">
+                <li className="m-2 ms-5">
+                  Frontend development (HTML, CSS, vanilla JS, React)
+                </li>
+                <li className="m-2 ms-5">
+                  Backend development (Python, Django)
+                </li>
+                <li className="m-2 ms-5">Remote or onside working</li>
+                <li className="m-2 ms-5">
+                  A strong focus on quality and accessibility
+                </li>
+                <li className="m-2 ms-5">
+                  An inclusive and friendly work environment
+                </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
