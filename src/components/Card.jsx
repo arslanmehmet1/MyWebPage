@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom";
-
 const Card = (data) => {
   console.log("ne geliyo", data);
-  const { title, image, desc, style, live, techno } = data;
-  const navigate = useNavigate();
+  const { title, image, desc, style, live, techno, source } = data;
+
   return (
     <div className="cards">
       <div className="titlediv">
@@ -20,13 +18,16 @@ const Card = (data) => {
         </h3>
         <p>
           {desc}{" "}
-          <button
-            type="button"
-            class="btn btn-success"
-            onClick={() => navigate("{live}")}
-          >
-            Live Project
-          </button>
+          <a href={live} target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-success">
+              Live Project
+            </button>
+          </a>
+          <a href={source} target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-secondary ms-1">
+              Source Code
+            </button>
+          </a>
         </p>
       </div>
     </div>

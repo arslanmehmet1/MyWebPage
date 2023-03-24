@@ -1,5 +1,5 @@
 import React from "react";
-
+import { AiTwotoneHeart } from "react-icons/ai";
 const Footer = () => {
   return (
     <div style={{ marginTop: "10rem" }}>
@@ -8,7 +8,8 @@ const Footer = () => {
           Copyright {new Date().getFullYear()}
         </h3>
         <p className="text-light text-center">
-          Made by me and Deployed on Netlify.
+          Made by me with <AiTwotoneHeart color="red" /> and Deployed on
+          Netlify.
         </p>
       </nav>
     </div>
