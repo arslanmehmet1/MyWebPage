@@ -11,6 +11,7 @@
 }
 .main {
   background-color: aliceblue;
+  height: 100%;
 }
 
 .card-container {

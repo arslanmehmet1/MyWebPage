@@ -127,8 +127,41 @@ export const data = [
     style: "Pure CSS",
     source: "https://github.com/arslanmehmet1/PROJECTS_ToDo_List",
     live: "https://arslanmehmet1.github.io/PROJECTS_ToDo_List/",
-    desc: "I create ToDo List App but there is no any backend DB, so if you refresh page you lost the data",
+    desc: "I create ToDo List App but there is no any backend DB, so you lost the data if you refresh page ",
     image:
       "https://user-images.githubusercontent.com/108485739/227578383-ccee81f0-6b40-4ff1-9e0a-f9f515c2ea2d.png",
+  },
+  {
+    id: 13,
+    title: "Normal Web Page",
+    techno: "HTML",
+    style: "Bootstarp",
+    source: "https://github.com/arslanmehmet1/PROJECTS_006_BootstrapWebPage",
+    live: "https://arslanmehmet1.github.io/PROJECTS_006_BootstrapWebPage/",
+    desc: "I create a web page by using bootstrap styling. Its not single page",
+    image:
+      "https://user-images.githubusercontent.com/108485739/227656888-68587eb2-b5be-4635-8346-2134043171e8.png",
+  },
+  {
+    id: 14,
+    title: "Team Member Ads",
+    techno: "HTML",
+    style: "Pure CSS",
+    source: "https://github.com/arslanmehmet1/PROJECT_004_TeamMemberPage",
+    live: "https://arslanmehmet1.github.io/PROJECT_004_TeamMemberPage/",
+    desc: "I create a web page to show team member by using pure CSS styling.",
+    image:
+      "https://user-images.githubusercontent.com/108485739/227658414-a4388305-f47a-4093-894f-ce23ec036df3.png",
+  },
+  {
+    id: 15,
+    title: "Parallax Web Page",
+    techno: "HTML",
+    style: "Pure CSS",
+    source: "https://github.com/arslanmehmet1/PROJECT_003_ParallaxWebPage",
+    live: "https://arslanmehmet1.github.io/PROJECT_003_ParallaxWebPage/",
+    desc: "I create a parallax web page by using pure CSS styling. Key word is background-attachment: fixed",
+    image:
+      "https://user-images.githubusercontent.com/108485739/227659104-3b462a4d-2100-4352-a72f-52e9dae2afd3.png",
   },
 ];
