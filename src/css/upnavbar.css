@@ -18,3 +18,9 @@
   letter-spacing: 0.3rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+@media screen and (max-width: 767px) {
+  .upword {
+    font-size: 1.3rem;
+  }
+}

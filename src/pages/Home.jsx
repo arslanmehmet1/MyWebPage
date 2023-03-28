@@ -7,7 +7,7 @@ import "../css/home.css";
 import myimg from "../img/myimg.jpg";
 import { AiOutlineDownload } from "react-icons/ai";
 import world from "../assets/about.gif";
-import dosya from "../assets/B.pdf";
+import dosya from "../assets/Resume.pdf";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -73,7 +73,7 @@ const Home = () => {
       </div>
       <section className="s2">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 firstdesc">
             <h1 className="work">To Be a Frontend Developer</h1>
             <p className="workdesc">
               My main focus was building high quality, and well-designed
@@ -107,7 +107,7 @@ const Home = () => {
       </section>
       <div className="bg img2">
         <div className="text-center">
-          <h5 className="titleWay1 text-center">download my resume</h5>
+          <h5 className="titleWay1 text-center res">download my resume</h5>
           <a href={dosya} download={"MyResume"}>
             {" "}
             <button type="button" className="resume">
@@ -136,19 +136,19 @@ const Home = () => {
               </span>
               <br />
               <br />
-              <h1 className="name2">What I can offer/ expect at work</h1>
+              <h1 className="name2 mt-3">What I can offer/ expect at work</h1>
               <ul className="text-start h4">
-                <li className="m-2 ms-5">
+                <li className="m-2 ms-1">
                   Frontend development (HTML, CSS, vanilla JS, React)
                 </li>
-                <li className="m-2 ms-5">
+                <li className="m-2 ms-1">
                   Backend development (Python, Django)
                 </li>
-                <li className="m-2 ms-5">Remote or onside working</li>
-                <li className="m-2 ms-5">
+                <li className="m-2 ms-1">Remote or onside working</li>
+                <li className="m-2 ms-1">
                   A strong focus on quality and accessibility
                 </li>
-                <li className="m-2 ms-5">
+                <li className="m-2 ms-1">
                   An inclusive and friendly work environment
                 </li>
               </ul>

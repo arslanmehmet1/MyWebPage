@@ -9,7 +9,7 @@ const UpNavbar = () => {
           <header className="py-5">
             <h1 className="display-1 hello">Hello</h1>
             <h1 className="display-4  wellcome">Wellcome to My Web Page</h1>
-            <h2 className="mb-1 mt-5 bolder">
+            <h2 className="mb-1 mt-5 bolder upword">
               On this page, you'll find everything you need to know about me and
               my work.
             </h2>
