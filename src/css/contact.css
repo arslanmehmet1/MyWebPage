@@ -1,0 +1,22 @@
+.first-box {
+  padding: 10px;
+  background: #59111158;
+}
+.second-box {
+  padding: 10px;
+  background: #39f;
+}
+.third-box {
+  padding: 10px;
+  background: #f66;
+}
+.fourth-box {
+  padding: 10px;
+  background: #6cc;
+}
+@media screen and (min-width: 1000px) {
+  .border {
+    width: 70%;
+    margin: auto;
+  }
+}

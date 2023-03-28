@@ -1,0 +1,6 @@
+.middle {
+  height: 70vh;
+}
+.middle:hover {
+  cursor: progress;
+}

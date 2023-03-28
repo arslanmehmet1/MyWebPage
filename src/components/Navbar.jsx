@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../css/navbar.css";
 
 const Navbar = () => {
@@ -29,10 +29,10 @@ const Navbar = () => {
       <div className="sticky-top">
         <div className="topnav" id="myTopnav">
           {/* <NavLink to="/">My Web Page</NavLink> */}
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/blogs/">Blogs</NavLink>
-          <NavLink to="/projects/">Projects</NavLink>
-          <NavLink to="/contact/">Contact</NavLink>
+          <Link to="/">Home</Link>
+          <Link to="/projects/">Projects</Link>
+          <Link to="/blogs/">Blogs</Link>
+          <Link to="/contact/">Contact</Link>
           <a href="javascript:void(0);" className="icon" onClick={myFunction}>
             <i className="fa fa-bars" />
           </a>

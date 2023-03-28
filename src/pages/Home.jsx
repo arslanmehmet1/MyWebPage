@@ -6,6 +6,8 @@ import UpNavbar from "../components/UpNavbar";
 import "../css/home.css";
 import myimg from "../img/myimg.jpg";
 import { AiOutlineDownload } from "react-icons/ai";
+import world from "../assets/about.gif";
+import dosya from "../assets/B.pdf";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -19,13 +21,24 @@ const Home = () => {
           <div className="left col-md-5">
             <img className="myimg" src={myimg} alt="" />
           </div>
-          <div className="right col-md-7">
+          <div className="right col-md-7 ">
             <h3 className="aboutme">My name is</h3>
             <h1 className="name">Mehmet Arslan</h1>
-            <h5 className="aboutdesc">
+            <h5 className="aboutdesc mb-5">
               I'm a fullstack developer from Turkiye, currently living in
               Kocaeli.
             </h5>
+            <div className="dinamic d-flex justify-content-center mb-5">
+              <div className="i-title">
+                <div className="i-title-wrapper">
+                  <div className="i-title-item">React.js Developer</div>
+                  <div className="i-title-item">Frontend Developer</div>
+                  <div className="i-title-item">Backend Developer</div>
+                  <div className="i-title-item">FullStack Developer</div>
+                  <div className="i-title-item">Web Developer</div>
+                </div>
+              </div>
+            </div>
             <h3 className="aboutme">
               Currently, I'm for hire and open to new opportunities. You can
               contact me via e-mail.
@@ -73,19 +86,19 @@ const Home = () => {
               the company.
             </p>
           </div>
-          <div className="col-md-6 px-5">
+          <div className="col-md-6 px-3">
             <h1 className="work">
               The Following CSS Frameworks/ Libraries Are Used For Front-End
               Projects
             </h1>
             <div className="workdesc">
               <ul className="text-start h4">
-                <li className="m-1 ms-5">Bootstrap</li>
-                <li className="m-1 ms-5">React-Bootstrap</li>
-                <li className="m-1 ms-5">Style-Component</li>
-                <li className="m-1 ms-5">Material-UI</li>
-                <li className="m-1 ms-5">Tailwind CSS</li>
-                <li className="m-1 ms-5">
+                <li className="m-1 ms-3">Bootstrap</li>
+                <li className="m-1 ms-3">React-Bootstrap</li>
+                <li className="m-1 ms-3">Styled-Component</li>
+                <li className="m-1 ms-3">Material-UI</li>
+                <li className="m-1 ms-3">Tailwind CSS</li>
+                <li className="m-1 ms-3">
                   Sass (Syntactically Awesome Stylesheet)
                 </li>
               </ul>
@@ -95,16 +108,19 @@ const Home = () => {
       </section>
       <div className="bg img2">
         <div className="text-center">
-          <h5 className="titleWay1 text-center">download and read my resume</h5>
-          <button type="button" className="resume">
-            Resume.pdf <AiOutlineDownload />
-          </button>
+          <h5 className="titleWay1 text-center">download my resume</h5>
+          <a href={dosya} download={"MyResume"}>
+            {" "}
+            <button type="button" className="resume">
+              Resume.pdf <AiOutlineDownload />
+            </button>
+          </a>
         </div>
       </div>
       <div className="overflow-hidden">
         <div className="s1 row">
           <div className="left col-md-6">
-            <img className="myimg" src={myimg} alt="" />
+            <img className="myimg" src={world} alt="important" />
           </div>
           <div className="right col-md-6">
             <h3 className="aboutme">

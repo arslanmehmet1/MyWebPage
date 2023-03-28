@@ -2,124 +2,141 @@ import React from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../css/contact.css";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { GoMail } from "react-icons/go";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 const Contact = () => {
   return (
     <div>
       <Navbar />
-      <div className="overflow-hidden">
-        {/* <div className="contact row">
-          <div className="col-sm-7 m-5 p-3">
-            <section className="mb-4">
-              <h2 className="h1-responsive font-weight-bold text-center my-4">
-                Contact me
-              </h2>
-              <p className="text-center w-responsive mx-auto mb-5">
-                Do you have any questions? Please do not hesitate to contact us
-                directly. Our team will come back to you within a matter of
-                hours to help you.
-              </p>
-              <div className="row">
-                <div className="col-md-9 mb-md-0 mb-5">
-                  <form
-                    id="contact-form"
-                    name="contact-form"
-                    action="mail.php"
-                    method="POST"
-                  >
-                    <div className="row">
-                      <div className="col-md-6">
-                        <div className="md-form mb-0">
-                          <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            className="form-control"
-                          />
-                          <label htmlFor="name" className="">
-                            Your name
-                          </label>
-                        </div>
-                      </div>
-                      <div className="col-md-6">
-                        <div className="md-form mb-0">
-                          <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            className="form-control"
-                          />
-                          <label htmlFor="email" className="">
-                            Your email
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="md-form mb-0">
-                          <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            className="form-control"
-                          />
-                          <label htmlFor="subject" className="">
-                            Subject
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="md-form">
-                          <textarea
-                            type="text"
-                            id="message"
-                            name="message"
-                            rows={2}
-                            className="form-control md-textarea"
-                            defaultValue={""}
-                          />
-                          <label htmlFor="message">Your message</label>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div className="text-center text-md-left">
-                    <a
-                      className="btn btn-primary"
-                      onclick="document.getElementById('contact-form').submit();"
-                    >
-                      Send
-                    </a>
-                  </div>
-                  <div className="status" />
-                </div>
-                <div className="col-md-3 text-center">
-                  <ul className="list-unstyled mb-0">
-                    <li>
-                      <i className="fas fa-map-marker-alt fa-2x" />
-                      <p>San Francisco, CA 94126, USA</p>
-                    </li>
-                    <li>
-                      <i className="fas fa-phone mt-4 fa-2x" />
-                      <p>+ 01 234 567 89</p>
-                    </li>
-                    <li>
-                      <i className="fas fa-envelope mt-4 fa-2x" />
-                      <p>contact@mdbootstrap.com</p>
-                    </li>
-                  </ul>
-                </div>
+      <div className="bigblock text-center mt-3">
+        <div className="firstblog container">
+          <h1>Contact me</h1>
+          <br />
+          <div className="row text-center g-2">
+            <a
+              href="https://www.google.com/maps/place/Ba%C5%9Fiskele%2FKocaeli/@40.6884199,29.9032385,23679m/data=!3m1!1e3!4m6!3m5!1s0x14cb42e3bf1a1185:0x26aa1c0f34a00590!8m2!3d40.6298368!4d29.950926!16s%2Fm%2F0ch1cqg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-md-3 col-sm-6 text-decoration-none text-black"
+            >
+              <div className="second-box">
+                <h1>
+                  <HiOutlineLocationMarker />
+                </h1>
+                <h3>Location</h3>
+                <p>Basiskele-Kocaeli-Turkiye</p>
               </div>
-            </section>
+            </a>
+            <a
+              href="mailto:marslan.developer@gmail.com"
+              className="col-md-3 col-sm-6 text-decoration-none text-black"
+            >
+              <div className="third-box">
+                <h1>
+                  <GoMail />
+                </h1>
+                <h3>E-mail</h3>
+                <p>marslan.developer@gmail.com</p>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mehmet-arslan-a40794243/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-md-3 col-sm-6 text-decoration-none text-black"
+            >
+              <div className="fourth-box">
+                <h1>
+                  <BsLinkedin />
+                </h1>
+                <h3>Linkedin</h3>
+                <p>linkedin.com/in/mehmetarslan</p>
+              </div>
+            </a>
+            <a
+              href="https://github.com/arslanmehmet1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-md-3 col-sm-6 text-decoration-none text-black"
+            >
+              <div className="first-box">
+                <h1>
+                  <BsGithub />
+                </h1>
+                <h3>Github</h3>
+                <p>github.com/arslanmehmet1</p>
+              </div>
+            </a>
           </div>
-        </div> */}
+        </div>
+
+        <div className="secondblog container ">
+          <div className="my-5 p-5 border border-3">
+            <p className="text-center w-responsive mx-auto mb-5 h5">
+              Do you have any questions? Please do not hesitate to contact me
+              directly. I will come back to you within a matter of hours to help
+              you.
+            </p>
+
+            <div className="mb-4 text-start">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                Name :
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Your name.."
+              />
+            </div>
+            <div className="mb-4 text-start">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                Subject :
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Your subject.."
+              />
+            </div>
+
+            <div className="mb-4 text-start">
+              <label htmlFor="exampleFormControlInput1" className="form-label">
+                Email :
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+
+            <div className="mb-4 text-start">
+              <label
+                htmlFor="exampleFormControlTextarea1"
+                className="form-label"
+              >
+                You can write message :
+              </label>
+              <textarea
+                className="form-control"
+                id="exampleFormControlTextarea1"
+                rows={3}
+                defaultValue={""}
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send Message
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="fixed-bottom">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 };

@@ -111,3 +111,31 @@
   font-size: 2.5rem;
   text-decoration: underline;
 }
+.i-title {
+  height: 70px;
+  overflow: hidden;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 8s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  /* 50% {
+    transform: translateY(-50px);
+  } */
+
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #005c53;
+  display: flex;
+  align-items: center;
+}
