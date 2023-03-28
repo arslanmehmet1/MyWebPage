@@ -88,8 +88,7 @@ const Home = () => {
           </div>
           <div className="col-md-6 px-3">
             <h1 className="work">
-              The Following CSS Frameworks/ Libraries Are Used For Front-End
-              Projects
+              The Following CSS Methods Are Used For Front-End Projects
             </h1>
             <div className="workdesc">
               <ul className="text-start h4">
