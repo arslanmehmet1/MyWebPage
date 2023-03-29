@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
             </a>
             <a
-              href="https://www.linkedin.com/in/mehmet-arslan-a40794243/"
+              href="https://www.linkedin.com/in/arslanmehmet/"
               target="_blank"
               rel="noopener noreferrer"
               className="col-md-3 col-sm-6 text-decoration-none text-black"
