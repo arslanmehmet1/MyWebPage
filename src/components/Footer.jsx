@@ -8,8 +8,7 @@ const Footer = () => {
           Copyright {new Date().getFullYear()}
         </h3>
         <p className="text-light text-center">
-          Made by me with <AiTwotoneHeart color="red" /> and Deployed on
-          Netlify.
+          Made by me with <AiTwotoneHeart color="red" /> and Deployed on Vercel.
         </p>
       </nav>
     </div>
