@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../css/contact.css";
@@ -6,8 +6,37 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { GoMail } from "react-icons/go";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
+import { toastMessageNotSend, toastMessageSend } from "../assets/Toastify";
+import { ToastContainer } from "react-toastify";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wz0xvll",
+        "template_nt5lhbe",
+        form.current,
+        "l6JwfzoZ61Bg7au-r"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message send");
+          toastMessageSend(`Hello ${name} your message send`);
+        },
+        (error) => {
+          console.log(error.text);
+          toastMessageNotSend(`Hello ${name} we couldnt send message`);
+        }
+      );
+    document.getElementById("my_form").reset();
+  };
+
   return (
     <div>
       <Navbar />
@@ -80,63 +109,60 @@ const Contact = () => {
               directly. I will come back to you within a matter of hours to help
               you.
             </p>
-
-            <div className="mb-4 text-start">
-              <label htmlFor="exampleFormControlInput1" className="form-label">
-                Name :
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Your name.."
-              />
-            </div>
-            <div className="mb-4 text-start">
-              <label htmlFor="exampleFormControlInput1" className="form-label">
-                Subject :
-              </label>
-              <input
-                type="text"
-                className="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Your subject.."
-              />
-            </div>
-
-            <div className="mb-4 text-start">
-              <label htmlFor="exampleFormControlInput1" className="form-label">
-                Email :
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-
-            <div className="mb-4 text-start">
-              <label
-                htmlFor="exampleFormControlTextarea1"
-                className="form-label"
-              >
-                You can write message :
-              </label>
-              <textarea
-                className="form-control"
-                id="exampleFormControlTextarea1"
-                rows={3}
-                defaultValue={""}
-              />
-            </div>
-            <button type="submit" class="btn btn-primary">
-              Send Message
-            </button>
+            <form ref={form} onSubmit={sendEmail} id="my_form">
+              <div className="mb-4 text-start">
+                <label>Name :</label>
+                <input
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  className="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Your name.."
+                  name="user_name"
+                  required
+                />
+              </div>
+              <div className="mb-4 text-start">
+                <label>Subject :</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Your subject.."
+                  name="user_subject"
+                />
+              </div>
+              <div className="mb-4 text-start">
+                <label>Email :</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                  name="user_email"
+                  required
+                />
+              </div>
+              <div className="mb-4 text-start">
+                <label>You can write message :</label>
+                <textarea
+                  className="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows={3}
+                  defaultValue={""}
+                  name="user_message"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 };
