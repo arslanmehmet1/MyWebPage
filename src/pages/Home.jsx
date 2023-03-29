@@ -76,20 +76,18 @@ const Home = () => {
           <div className="col-md-6 firstdesc">
             <h1 className="work">To Be a Frontend Developer</h1>
             <p className="workdesc">
-              My main focus was building high quality, and well-designed
+              My main focus is building high quality, and well-designed
               enterprise products with <span className="bold2">React.</span> I
-              can prefer <span className="bold2">Redux</span> for Global State
-              Management in case of need. I always strive for clean and
-              accessible UI projects. I also brought my attention to building a
-              scalable design system components library and tools to bring
-              consistency in UX and tooling across all the different products of
-              the company.
+              can use redux
+              <span className="bold2">Redux</span>if needed for Global State
+              Management. I always strive for clean and accessible UI projects.
+              I also brought my attention to building a scalable design system
+              components library and tools to bring consistency in UX and
+              tooling across all the different products of the company.
             </p>
           </div>
           <div className="col-md-6 px-3">
-            <h1 className="work">
-              The Following CSS Methods Are Used For Front-End Projects
-            </h1>
+            <h1 className="work">My Toolkit For Frontend Develepment</h1>
             <div className="workdesc">
               <ul className="text-start h4">
                 <li className="m-1 ms-3">Bootstrap</li>
@@ -144,7 +142,7 @@ const Home = () => {
                 <li className="m-2 ms-1">
                   Backend development (Python, Django)
                 </li>
-                <li className="m-2 ms-1">Remote or onside working</li>
+                <li className="m-2 ms-1">Remote or Onsite working</li>
                 <li className="m-2 ms-1">
                   A strong focus on quality and accessibility
                 </li>

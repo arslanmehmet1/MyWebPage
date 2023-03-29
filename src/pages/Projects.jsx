@@ -12,7 +12,7 @@ const Projects = () => {
       <Navbar />
       <main className="main">
         <div className="header">
-          <h1>My Portfolio Projects</h1>
+          <h1>Project Portfolio</h1>
         </div>
         <div className="card-container">
           {data.map((item, index) => (

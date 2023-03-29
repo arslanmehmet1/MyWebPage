@@ -8,7 +8,7 @@ const Blogs = () => {
     <>
       <Navbar />
       <div className="middle d-flex justify-content-center align-items-center">
-        <h3 className="">This page's editing is in progress</h3>
+        <h3>This page is under construction</h3>
       </div>
       <div className="fixed-bottom">
         <Footer />
