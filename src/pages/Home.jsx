@@ -7,7 +7,7 @@ import "../css/home.css";
 import myimg from "../img/myimg.jpg";
 import { AiOutlineDownload } from "react-icons/ai";
 import world from "../assets/about.gif";
-import dosya from "../assets/Resumee";
+import dosya from "../assets/Resumee.pdf";
 
 const Home = () => {
   const navigate = useNavigate();
