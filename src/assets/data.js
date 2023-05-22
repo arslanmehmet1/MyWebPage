@@ -1,6 +1,17 @@
 export const data = [
   {
     id: 1,
+    title: "Product Control",
+    techno: "Pure JS",
+    style: "Bootstrap",
+    source: "https://github.com/arslanmehmet1/mos_otomasyon/",
+    live: "https://arslanmehmet1.github.io/mos_otomasyon/",
+    desc: "You can add machine and product. Quantity table refresh dropdown input. Also you can delete or update on data. I used mockapi.io  for backend.",
+    image:
+      "https://user-images.githubusercontent.com/108485739/239849012-d267fdc0-0746-41e3-8c4b-8c015003d555.png",
+  },
+  {
+    id: 2,
     title: "Contact Agenda",
     techno: "JS - React",
     style: "Material-UI",
@@ -11,7 +22,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227335815-3c5a1169-6410-4fc6-99b6-89f914d57239.png",
   },
   {
-    id: 2,
+    id: 3,
     title: "Movie App",
     techno: "JS - React",
     style: "Tailwind-CSS",
@@ -22,7 +33,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227385144-8de1fa74-b580-4e6e-a2e7-7973e424e599.png",
   },
   {
-    id: 3,
+    id: 4,
     title: "Recipe App",
     techno: "JS - React",
     style: "Styled-Components",
@@ -33,7 +44,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227518806-993aa7e3-0066-4d7d-a693-58309dd483c4.png",
   },
   {
-    id: 4,
+    id: 5,
     title: "React Router",
     techno: "JS - React",
     style: "Pure CSS",
@@ -44,7 +55,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227537467-ea5f39f1-db91-4f9a-acce-d27fb021123e.png",
   },
   {
-    id: 5,
+    id: 6,
     title: "Random User Choose",
     techno: "JS - React",
     style: "Pure CSS",
@@ -55,7 +66,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227536860-27393016-1eba-4c60-8531-40998fcafcc2.png",
   },
   {
-    id: 6,
+    id: 7,
     title: "Task Tracker",
     techno: "JS - React",
     style: "Bootstrap-ReactBootstarp",
@@ -66,7 +77,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227538084-db76d152-b0f4-4951-a516-7e1a2ff97e80.png",
   },
   {
-    id: 7,
+    id: 8,
     title: "Popular Tour Places",
     techno: "JS - React",
     style: "SASS",
@@ -77,7 +88,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227543398-1f34cbfd-58ee-4759-b948-c52f2abef0ba.png",
   },
   {
-    id: 8,
+    id: 9,
     title: "Image Gallery",
     techno: "JS - React",
     style: "Pure CSS",
@@ -88,7 +99,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227545263-65ee08f4-be53-416e-a41a-a21f21877e20.png",
   },
   {
-    id: 9,
+    id: 10,
     title: "Digital Clock",
     techno: "Vanilla JS",
     style: "Pure CSS",
@@ -99,7 +110,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227569163-4e8811b7-188d-4f56-9808-70cd4da4a578.png",
   },
   {
-    id: 10,
+    id: 11,
     title: "Weather Forecast App",
     techno: "Vanilla JS",
     style: "Pure CSS",
@@ -110,7 +121,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227570343-e2dea032-7668-4cc3-bdd9-fac4c50d9773.png",
   },
   {
-    id: 11,
+    id: 12,
     title: "Online Shopping Cart",
     techno: "Vanilla JS",
     style: "Pure CSS",
@@ -121,7 +132,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227577223-43301a28-3f51-4b93-8ec2-fa5ec2200074.png",
   },
   {
-    id: 12,
+    id: 13,
     title: "To Do List App",
     techno: "Vanilla JS",
     style: "Pure CSS",
@@ -132,7 +143,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227578383-ccee81f0-6b40-4ff1-9e0a-f9f515c2ea2d.png",
   },
   {
-    id: 13,
+    id: 14,
     title: "Normal Web Page",
     techno: "HTML",
     style: "Bootstarp",
@@ -143,7 +154,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227656888-68587eb2-b5be-4635-8346-2134043171e8.png",
   },
   {
-    id: 14,
+    id: 15,
     title: "Team Member Ads",
     techno: "HTML",
     style: "Pure CSS",
@@ -154,7 +165,7 @@ export const data = [
       "https://user-images.githubusercontent.com/108485739/227658414-a4388305-f47a-4093-894f-ce23ec036df3.png",
   },
   {
-    id: 15,
+    id: 16,
     title: "Parallax Web Page",
     techno: "HTML",
     style: "Pure CSS",
